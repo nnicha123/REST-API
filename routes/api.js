@@ -14,7 +14,7 @@ router.get('/ninjas', function(req, res, next){
         },
         maxDistance: 100000,
         spherical: true,
-        distanceField: "dis"
+        distanceField: "dist"
        }).then(function(ninjas){
         res.send(ninjas);
     }).catch(next);

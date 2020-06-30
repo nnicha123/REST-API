@@ -9,6 +9,7 @@ mongoose.connect("mongodb://localhost/ninjago",{ useUnifiedTopology: true,
 useNewUrlParser: true })
 // mongoose.Promise = global.Promise
 
+app.use(express.static('public'))
 
 app.use(bodyParser.json())
 // initialize routes
